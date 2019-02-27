@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>EMPLOYEE APPLICATION</h1>
+<form action="{% url 'apply' %}" method="post">
+    {% csrf_token %}    <!--prevent hackers-->
+    {{ newForm }}     <!--form made and injected-->
+    <button>Apply</button>
+
+</form>
+</body>
+</html>
