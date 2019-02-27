@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>EMPLOYEE APPLICATION</h1>
-<form action="{% url 'apply' %}" method="post">
+<form action="{% url 'applicant' %}" method="post">
     {% csrf_token %}    <!--prevent hackers-->
     {{ newForm }}     <!--form made and injected-->
     <button>Apply</button>
